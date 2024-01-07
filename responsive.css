@@ -1,0 +1,43 @@
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+
+    .showcase h2 {
+        font-size: 2em;
+    }
+
+    .showcase p {
+        font-size: 1em;
+    }
+
+    .searc_con {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rest_srch {
+        border-left: none;
+    }
+
+    .rest_srch {
+        width: unset;
+    }
+
+    .mob-rep {
+        width: 35%;
+    }
+
+    .top_row {
+        row-gap: 15px;
+    }
+
+    .top_coll {
+        flex-direction: column;
+    }
+
+    .inp_des {
+        width: 100%;
+    }
+
+    .imgs-app-dnld img {
+        width: 40%;
+    }
+}

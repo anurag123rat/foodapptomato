@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fastest Food Delivery App</title>
+    <!-- CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity=""
+        crossorigin="anonymous">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font family Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!--Responsive CSS -->
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body id="lstngpage">
+    <section>
+        <div class="container">
+            <div class="row row-lstpg ">
+                <div class="col-md-8">
+                    <div class="toplft d-flex align-items-baseline ">
+                        <a href="index.html">
+                            <h3><em>Tomato</em></h3>
+                        </a>
+                        <div class="searc_con">
+                            <div class="loc_srch">
+                                <span class="material-icons-outlined">
+                                    location_on
+                                </span>
+                                <input type="text" placeholder="Ashoka, Red Hanu">
+                            </div>
+                            <div class="rest_srch">
+                                <span class="material-icons-outlined">
+                                    search
+                                </span>
+                                <input type="text" name="" id="" placeholder="Search for restuarant">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="links-sl d-flex">
+                        <a href="#">Login</a>
+                        <a href="#">SignUp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tabbing_pages">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true"> <span class="material-icons-outlined">
+                                delivery_dining
+                            </span>
+                            <en> Delivery</en>
+                        </button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false"> <span
+                                class="material-icons-outlined">
+                                restaurant
+                            </span> Dining Out</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                            type="button" role="tab" aria-controls="nav-contact" aria-selected="false"> <span
+                                class="material-icons-outlined">
+                                liquor
+                            </span>NightLife</button>
+                    </div>
+                </nav>
+                <div class="filter_sec d-flex">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#allfilters"> <span
+                            class="material-icons-outlined">
+                            filter_alt
+                        </span> Filter</a>
+                    <a class="ratingfilter" href="#">See All</a>
+                    <a class="ratefilter" onclick="ftf(4.0)" href="#">Rating: 4.0+</a>
+                    <a class="filterClose" href="#"> </a>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+                        <h2>Delivery Restuarant in Connaught Place</h2>
+
+                        <div class="list_block_spc">
+                            <div class="row row_lst_gap pro_dyn_lst">
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">3.5</span>
+                                            </div>
+                                            <div class="d-flex justify-content-end" >
+                                                <span id="delivery_time">20 min</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
+                        <h2>Delivery Restuarant in Connaught Place</h2>
+                        <div class="list_block_spc">
+                            <div class="row row_lst_gap">
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">3.5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">3.3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">2.8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">2.7</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.7</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">1.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                        tabindex="0">
+                        <div class="list_block_spc">
+                            <div class="row row_lst_gap">
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="block_tile_spz">
+                                        <img src="./assets/ngpldihtti.jpg" alt="">
+                                        <div class="tile_inf">
+                                            <h2>CAKE & CREAM</h2>
+                                            <span>Bakery Desert</span>
+                                            <div>
+                                                <span id="rating">4.1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="container">
+            <h2>TOMATO</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="foot_in_cntnt">
+                        <h5>About Tomato</h5>
+                        <ul>
+                            <li> <a href="#">Who we are</a> </li>
+                            <li> <a href="#">Blog</a> </li>
+                            <li> <a href="#">Work with us</a> </li>
+                            <li> <a href="#">Investors Relations</a></li>
+                            <li> <a href="#">Report Fraud</a></li>
+                            <li> <a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="foot_in_cntnt">
+                        <h5>About Tomato</h5>
+                        <ul>
+                            <li> <a href="#">Tomato</a> </li>
+                            <li> <a href="#">Blinkit</a> </li>
+                            <li> <a href="#">Feeding India</a> </li>
+                            <li> <a href="#">Hyperpure</a></li>
+                            <li> <a href="#">Zomaland</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="foot_in_cntnt">
+                        <h5>Learn More</h5>
+                        <ul>
+                            <li> <a href="#">Privacy</a> </li>
+                            <li> <a href="#">Security</a> </li>
+                            <li> <a href="#">Terms</a> </li>
+                            <li> <a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="foot_in_cntnt">
+                        <h5>Social Links</h5>
+                        <ul>
+                            <li> <a href="#">Facebook</a> </li>
+                            <li> <a href="#">Instagram</a> </li>
+                            <li> <a href="#">Snapchat</a> </li>
+                            <li> <a href="#">Youtube</a></li>
+                        </ul>
+                        <div class="foot-app-dnld">
+                            <img src="./assets/app-store.jpg" alt="">
+                            <img src="./assets/g-play.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last_foot">
+                <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy
+                    and Content Policies. All trademarks are properties of their respective owners. 2008-2023 ©
+                    Zomato™ Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="allfilters" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="allfiltersLabel" aria-hidden="true">
+        <div class=" modal-lg modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="allfiltersLabel">Filters</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">Popularity</button>
+
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">Ratings</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-settings" type="button" role="tab"
+                                aria-controls="v-pills-settings" aria-selected="false">All filters</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <div class="innr_cntnt">
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="html" name="fav_language" onclick="sortHightoLow()"
+                                            value="HTML">
+                                        <label for="html">Rating : High to Low</label>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="javascript" name="fav_language"
+                                            onclick="sortLowtoHigh()" value="JavaScript">
+                                        <label for="javascript">Rating : Low to High</label>
+                                    </div>
+
+                                    <div class="d-flex align-items-center ">
+                                        <input type="radio" id="css" name="fav_language" onclick="delvrytimeHightoLow()" value="CSS">
+                                        <label for="css">Delivery Time</label>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <input type="radio" id="python" name="fav_language"  onclick="sortCosthightolow()"  value="Python">
+                                        <label for="python">Cost : High to low</label>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">2</div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+
+
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <div class="contnt">
+                                    <div class="all_filter">
+                                        <input id="all_fltr_search" type="text" onKeyPress="search_filtr()"
+                                            placeholder="Search Here...">
+                                        <span class="material-icons-outlined filter_serch ">
+                                            search
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Clear All</button>
+                    <button type="button" class="btn btn-danger">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity=""
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
